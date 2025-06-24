@@ -474,8 +474,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 573600673682646012, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 573600673682646012, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
       propertyPath: m_ImplicitCom
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655903610171815669, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655903610171815669, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655903610171815669, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.targetPosition
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756405203488200406, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756405203488200406, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4756405203488200406, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.targetPosition
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5225914317145530514, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
       propertyPath: m_DefaultActionMap
@@ -524,6 +552,30 @@ PrefabInstance:
     - target: {fileID: 7223610897227011223, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
       propertyPath: m_Name
       value: PlayerKart4x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151780050565631108, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151780050565631108, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151780050565631108, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.targetPosition
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432775006493617540, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432775006493617540, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 7500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432775006493617540, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
+      propertyPath: m_SuspensionSpring.targetPosition
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1977,7 +2029,10 @@ MonoBehaviour:
   - {fileID: 384414493}
   - {fileID: 2142740940}
   DriveTorque: 100
-  BrakeTorque: 120
+  BrakeTorque: 300
+  DownForce: 100
+  SteerAngle: 30
+  BrakeAssist: 0
 --- !u!146 &1960624058 stripped
 WheelCollider:
   m_CorrespondingSourceObject: {fileID: 8432775006493617540, guid: 05ebe81ddffa6854692ff86049d10030, type: 3}
